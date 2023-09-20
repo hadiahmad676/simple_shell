@@ -44,7 +44,7 @@ int hsh(info_t *info, char **av)
 }
 
 /**
- * f_builtin - finds a builtin command
+ * find_builtin - finds a builtin command
  * @info: the parameter & return info struct
  *
  * Return: -1 if builtin not found,
@@ -52,7 +52,7 @@ int hsh(info_t *info, char **av)
  *			1 if builtin found but not successful,
  *			-2 if builtin signals exit()
  */
-int f_builtin(info_t *info)
+int find_builtin(info_t *info)
 {
 	int i, built_in_ret = -1;
 	builtin_table builtintbl[] = {
@@ -78,12 +78,12 @@ int f_builtin(info_t *info)
 }
 
 /**
- * f_cmd - finds a command in PATH
+ * find_cmd - finds a command in PATH
  * @info: the parameter & return info struct
  *
  * Return: void
  */
-void f_cmd(info_t *info)
+void find_cmd(info_t *info)
 {
 	char *path = NULL;
 	int i, k;
@@ -158,3 +158,4 @@ void fork_cmd(info_t *info)
 		}
 	}
 }
+
