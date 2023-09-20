@@ -1,4 +1,4 @@
-(.TH man 1 "16 SEP 2023" "0.1" "simple_shell man page"
+.TH man 1 "16 SEP 2023" "0.1" "simple_shell man page"
 
 .SH NAME
 .B simple_shell
@@ -10,7 +10,7 @@
 .SH DESCRIPTION
 Shell is a UNIX term for the interactive user interface with an operating system. The shell is the layer of programming that understands
 and executes the commands a user enters. In some systems, the shell is called a command interpreter. A shell usually implies an interface
-with a command syntax 
+with a command syntax
 
 .B Overview
 
@@ -41,4 +41,3 @@ Single space required after argument.
 
 .SH AUTHOR
 HADI AHMAD and LUCKY CHUKWU
-
